@@ -11,7 +11,7 @@ const Protected = () => {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/cars/", {
+    fetch("https://ed-5514448997187584.educative.run:3000/cars/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
