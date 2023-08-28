@@ -18,7 +18,7 @@ const Login = () => {
   } = useForm();
 
   const getUserData = async (token) => {
-    const response = await fetch("http://127.0.0.1:8000/users/me", {
+    const response = await fetch("https://ed-5514448997187584.educative.run:3000/users/me", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const Login = () => {
   };
 
   const onFormSubmit = async (data) => {
-    const response = await fetch("/users/login", {
+    const response = await fetch("https://ed-5514448997187584.educative.run:3000/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
